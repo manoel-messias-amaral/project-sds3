@@ -1,6 +1,10 @@
-import NavBar from "components/NavBar";
-import Footer from './components/Footer/index';
+
 import DataTable from "components/DataTable";
+import Footer from "components/Footer";
+import NavBar from "components/NavBar";
+import BarChart from "components/BarChart";
+import DonutChart from "components/DonutChart";
+
 
 
 
@@ -15,16 +19,20 @@ function App() {
       <div className="col-sm-6">
           < h5 className="test-center text-secondary">Taxa de sucesso</h5>
 
-          <BarChart/>
+          <BarChart />
       </div>
       <div className="col-sm-6">
           <h5 className="test-center text-secondary">Todas vendas</h5>
 
-          <BarChart/>
+          <DonutChart />
 
       </div>
 </div>
-        
+
+       <div className="py-3">
+        <h2 className="text-primary">Todas Vendas</h2> 
+
+        </div>
         <DataTable />
       </div>
       <Footer />
